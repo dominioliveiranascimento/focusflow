@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="logo">⚡ FocusFlow</div>
+        </header>
+        <main class="main-content">
+            <section class="task-section">
+                <div class="progress-info">
+                    <span id="progress-text">0/0 tarefas concluídas</span>
+                    <div class="progress-bar-bg">
+                        <div id="progress-bar-fill" class="progress-bar-fill"></div>
+                    </div>
+                </div>
+
+                <form id="task-form" class="task-form">
+                    <input type="text" id="task-input" placeholder="Nova tarefa..." required />
+                    <input type="text" id="time-input" placeholder="Min (ex:30)" min="1" required />
+                    <button type="submit">Adicionar</button>
+                </form>
+
+                <ul id="task-list" class="task-list"></ul>
+                
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

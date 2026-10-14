@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.header {
+    margin-bottom: 24px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffb703;
+}
+
+.progress-info {
+    margin-bottom: 20px;
+}
+
+.progress-text {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.task-form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.task-form input {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.task-form input[type="text"] {
+  flex: 2;
+}
+
+.task-form input[type="number"] {
+  flex: 1;
+}
+
+.task-form button {
+    background-color: #ffb703;
+    border: none;
+    color: #121212;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.task-form button:hover {
+    opacity: 0.9;
+}
+
+.task-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.task-item {
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
+    padding: 14px 16px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: border-color 0.2s;
+}
+
+.task-item.completed {
+    opacity: 0.5;
+}
+
+.task-item.completed .task-title {
+    text-decoration: line-through;
+}
+
+.task-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-item.completed .checkbox {
+  background-color: #ffb703;
+  border-color: #ffb703;
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.task-time {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff5555;
+  cursor: pointer;
+  font-size: 1rem;
+}
